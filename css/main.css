@@ -1,7 +1,43 @@
-body {
-  background-color: cornsilk;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.opensans {
+	font-family: "Open Sans", sans-serif;
 }
 
-p {
-  font-size: 14px;
+body {
+	background-color: ghostwhite;
+	font-family: "Open Sans";
+	font-size: 12px;
+}
+
+nav ul {
+
+}
+nav ul li {
+	display: inline;
+	margin-right: 20px;
+}
+
+a:link {
+	color: gray;
+	text-decoration: none;
+}
+
+a:visited {
+	color: darkgray;
+}
+
+svg {
+	position: relative;
+    z-index: -1;
+	fill: red;
+	left: -30px;
+	top: 5px;
+}
+
+.change {
+  visibility: hidden;
+}		
+.container:hover + .change {
+  visibility: visible;
 }
